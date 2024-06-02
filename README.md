@@ -42,33 +42,36 @@ What are the steps required to install your project? Provide a step-by-step desc
 ### 	:wrench: Building: Parts and Soldering
 
 1. Buy (or search from a drawer) the following electrical parts:
-   1. 6 Arduino Nano ([example part]())
-   2. 1 Arduino Micro ([example part]())
-   3. 7 round ON/OFF-switches ([example part]())
-   4. 6 big dome buttons ([example part]())
-   5. 2 small buttons ([example part]())
-   2. 8 LEDs ([example part]())
-   3. 6 radio transmitter-receiver pairs ([example part]())
-   1. 7 9V batteries ([example part]())
-   2. 7 9V battery jumper wires ([example part]())
-   1.  jumper wires ([example part]())
+   1. 6 Arduino Nano ([example part](https://www.amazon.de/dp/B0CPTZKRP3?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   2. 1 Arduino Micro ([example part](https://www.reichelt.de/de/de/arduino-micro-atmega32u4-microusb-arduino-micro-p130166.html?PROVID=2788&gad_source=1&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf3ZUSLnkehNaqaTkQEhOhHEiTTxGXjOe1krdQb59aUsY_n1jT3tHzEaAtqJEALw_wcB&&r=1))
+   3. 7 round ON/OFF-switches ([example part](https://www.amazon.de/dp/B09TKVSHRF?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   4. 6 big dome buttons ([example part](https://www.amazon.de/dp/B008FZJ2WE?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   5. 2 small buttons ([example part](https://www.berrybase.de/kurzhubtaster-vertikale-printmontage-6x6mm-h-5-0mm))
+   6. 8 LEDs ([example part](https://www.amazon.de/dp/B0BC85WDTM?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   7. 6 radio transmitter-receiver pairs ([example part](https://www.amazon.de/dp/B01H2D2RH6?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   8. 7 9V batteries ([example part](https://www.amazon.de/dp/B0CQLYW79X?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   9. 7 9V battery jumper wires ([example part](https://www.amazon.de/dp/B0BGPG3NCY?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   10. Jumper wires ([example part](https://www.amazon.de/dp/B01EV70C78?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   11. Resistors ([example part](https://www.amazon.de/dp/B09KGLG8CM?psc=1&ref=ppx_yo2ov_dt_b_product_details))
 2. Solder parts according to the curcuit diagram below
-2. Build or buy 3D-printed or other casings
+3. Build or buy 3D-printed or other casings
    1. 1 terminal: `cases/terminal/Controller_Box.stl` and `cases/terminal/Controller_Deckel.stl`
    2. 6 buttons: `cases/button/Button_Box.stl` and `cases/button/Button_Deckel.stl`
-3. Insert the soldered parts into the cases according to the user interface below (a little filing or glueing might be necessary)
+4. Insert the soldered parts into the cases according to the user interface below (a little filing or glueing might be necessary)
 
 **Graphical circuit diagram:**
+
 ![](diagrams/graphical%20circuit%20diagram.png)
 
 **User Interface:**
+
 ![](diagrams/user%20interface.png)
 
 ### :screwdriver: Installation: Compiling and Flashing
 
 1. Clone this repository `git clone https://github.com/andreasnicklaus/game-buzzers.git`
-2. Install the ([Arduino IDE]())
-3. Connect the terminal via USB and flash the terminal code from [receiver](./receiver) on the controller ([How to upload code with the Arduino IDE]())
+2. Install the ([Arduino IDE](https://www.arduino.cc/en/software))
+3. Connect the terminal via USB and flash the terminal code from [receiver](./receiver) on the controller ([How to upload code with the Arduino IDE](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE))
    1. Remap the LED connections in [receiver/receiver.ino](receiver/receiver.ino) with the help of the [init mode](#modes)
    ```ino
    // Output pins (change if the order is wrong)
@@ -86,7 +89,7 @@ What are the steps required to install your project? Provide a step-by-step desc
    //! change for every button
    const char *rf_msg = "1";
    ```
-   2. Connect the button via USB and flash the transmitter code from [transmitter](./transmitter) ([How to upload code with the Arduino IDE]())
+   2. Connect the button via USB and flash the transmitter code from [transmitter](./transmitter) ([How to upload code with the Arduino IDE](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE))
 
 ## :arrow_forward: Usage
 
