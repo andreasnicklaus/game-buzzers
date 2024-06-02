@@ -39,8 +39,6 @@ bool button_6_active = false;
 int mode = 1;
 GameMode* gameMode = new Init();
 
-// TODO: FIXME: Add synchronization for adding active buttons
-
 void setup()
 {
     Serial.begin(9600);	// Debugging only
