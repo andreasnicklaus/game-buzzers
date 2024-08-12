@@ -9,7 +9,11 @@ private:
   int waitMs = 300;
   int currentLedNumber = 1;
   int timesBlinked = 0;
-  // int lastAction = 0 ;
+  int mode = 0;
+  void identifyTick();
+  void flushTick();
+  void leftRightTick();
+  void alternateTick();
 public:
   String name = "Lights";
   Lights();
