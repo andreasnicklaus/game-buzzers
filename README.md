@@ -53,6 +53,9 @@ What are the steps required to install your project? Provide a step-by-step desc
    9. 7 9V battery jumper wires ([example part](https://www.amazon.de/dp/B0BGPG3NCY?psc=1&ref=ppx_yo2ov_dt_b_product_details))
    10. Jumper wires ([example part](https://www.amazon.de/dp/B01EV70C78?psc=1&ref=ppx_yo2ov_dt_b_product_details))
    11. Resistors ([example part](https://www.amazon.de/dp/B09KGLG8CM?psc=1&ref=ppx_yo2ov_dt_b_product_details))
+   12. DFPlayer Mini ([example part](https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299))
+   13. Micro-SD cards ([example part](https://www.reichelt.de/microsdhc-speicherkarte-32gb-sandisk-ultra-sdsqua4032ggn6ma-p297179.html))
+   14. Speakers ([example part](https://www.amazon.de/dp/B09PL6XFHC?psc=1&ref=ppx_yo2ov_dt_b_product_details))
 2. Solder parts according to the curcuit diagram below
 3. Build or buy 3D-printed or other casings
    1. 1 terminal: `cases/terminal/Controller_Box.stl` and `cases/terminal/Controller_Deckel.stl`
